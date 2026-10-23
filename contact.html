@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Private Events, Catering & Contact · Mendoza's Food Truck</title>
+  <meta name="description" content="Book Mendoza's Food Truck for private events, catering, quinceañeras, weddings and company parties in Reno & Sun Valley, NV. Call (775) 420-8344.">
+  <meta name="theme-color" content="#140707">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span class="topbar__status"><span class="pulse"></span><span data-i18n="top.open">Open 7 days a week · 2 locations</span></span>
+    <a class="topbar__phone" href="tel:+17754208344">📞 (775) 420-8344</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a href="index.html" class="nav__brand" aria-label="Mendoza's Food Truck home">
+      <img src="assets/img/logo-256.png" alt="Mendoza's Food Truck logo" width="56" height="53">
+      <span class="nav__word">Mendoza's<small data-i18n="nav.since">Food Truck · Since 2001</small></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="index.html#menu" data-i18n="nav.menu">Menu</a>
+      <a href="index.html#specials" data-i18n="nav.specials">Specials</a>
+      <a href="index.html#double-decker" data-i18n="nav.dd">2-Story Truck</a>
+      <a href="index.html#visit" data-i18n="nav.visit">Locations</a>
+      <a href="contact.html" class="is-on" data-i18n="nav.events">Events & Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="cart-btn" href="index.html#menu" style="text-decoration:none">
+        <span data-i18n="nav.order">Order</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="c-hero">
+    <div class="papel" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="script" data-i18n="c.kicker">Let's talk tacos</p>
+      <h1 data-i18n="c.title">Private Events, Catering & More</h1>
+      <p data-i18n="c.lead">Birthdays, weddings, quinceañeras, company lunches, festivals — tell us about your event and we'll get back to you with a quote. Questions, feedback or big orders? Send them here too.</p>
+    </div>
+  </section>
+
+  <div class="wrap c-wrap">
+    <form class="c-form" id="contactForm" novalidate>
+      <fieldset style="border:0;padding:0;margin:0">
+        <legend class="fld" style="margin-bottom:10px" data-i18n="c.type">What can we help with?</legend>
+        <div class="c-types">
+          <label><input type="radio" name="inquiry" value="Private event / party" checked><span data-i18n="c.t1">Private event / party</span></label>
+          <label><input type="radio" name="inquiry" value="Catering"><span data-i18n="c.t2">Catering</span></label>
+          <label><input type="radio" name="inquiry" value="Double-Decker booking" data-type="double-decker"><span data-i18n="c.t3">Book the 2-story Double-Decker</span></label>
+          <label><input type="radio" name="inquiry" value="Large / group order"><span data-i18n="c.t4">Large / group order</span></label>
+          <label><input type="radio" name="inquiry" value="General question"><span data-i18n="c.t5">General question</span></label>
+          <label><input type="radio" name="inquiry" value="Feedback"><span data-i18n="c.t6">Feedback</span></label>
+        </div>
+      </fieldset>
+
+      <div class="c-grid">
+        <label class="fld"><span data-i18n="f.name">Name</span><input name="name" required autocomplete="name"></label>
+        <label class="fld"><span data-i18n="f.phone">Phone</span><input name="phone" type="tel" required autocomplete="tel"></label>
+        <label class="fld full"><span data-i18n="f.email">Email</span><input name="email" type="email" required autocomplete="email"></label>
+        <label class="fld event-only"><span data-i18n="c.date">Event date</span><input name="event_date" type="date"></label>
+        <label class="fld event-only"><span data-i18n="c.guests">Guests (approx.)</span><input name="guests" type="number" min="1" inputmode="numeric"></label>
+        <label class="fld full event-only"><span data-i18n="c.where">Event location / city</span><input name="event_location"></label>
+        <label class="fld full"><span data-i18n="c.msg">Tell us more</span><textarea name="message" rows="5" required data-i18n-ph="c.msgPh" placeholder="Event type, hours, menu ideas, budget…"></textarea></label>
+      </div>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn btn--red btn--block" type="submit" data-i18n="c.send">Send Inquiry</button>
+      <p class="form-msg" id="contactMsg" role="status" aria-live="polite"></p>
+    </form>
+
+    <aside class="c-side">
+      <div class="c-card">
+        <h3 data-i18n="c.reach">Reach us directly</h3>
+        <p>📞 <a href="tel:+17754208344">(775) 420-8344</a></p>
+        <p>✉️ <a href="mailto:Mendozasfoodtruck01@gmail.com">Mendozasfoodtruck01@gmail.com</a></p>
+        <p>📍 5425 Sun Valley Blvd, Sun Valley, NV 89433</p>
+        <p>📍 500 S Meadows Pkwy, Reno, NV 89521</p>
+        <p><a href="#" data-ig target="_blank" rel="noopener">Instagram</a> · <a href="#" data-fb target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+      <div class="c-card">
+        <h3 data-i18n="c.why">Why book Mendoza's</h3>
+        <ul>
+          <li data-i18n="c.w1">Serving Reno since 2001</li>
+          <li data-i18n="c.w2">Full truck setup — grill, tortillas & salsas</li>
+          <li data-i18n="c.w3">Birria, tacos, burritos & aguas frescas for any crowd</li>
+          <li data-i18n="c.w4">Rooftop Double-Decker for unforgettable events</li>
+        </ul>
+        <img src="assets/img/double-decker.jpg" alt="Mendoza's 2-story food truck" loading="lazy">
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="papel papel--foot" aria-hidden="true"></div>
+  <p class="foot__base">© <span data-year></span> Mendoza's Food Truck · <span data-i18n="foot.made">Made with love in Reno</span></p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/config.js"></script>
+<script src="js/menu-data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function () {
+  var C = window.SITE_CONFIG, f = document.getElementById("contactForm"), msg = document.getElementById("contactMsg");
+  // preselect from ?type=double-decker
+  if (/type=double-decker/.test(location.search)) { var dd = f.querySelector('[data-type="double-decker"]'); if (dd) dd.checked = true; }
+  function toggleEvent() {
+    var v = f.querySelector('input[name="inquiry"]:checked').value;
+    var show = /event|Catering|Double|group/i.test(v);
+    f.querySelectorAll(".event-only").forEach(function (el) { el.hidden = !show; });
+  }
+  f.addEventListener("change", function (e) { if (e.target.name === "inquiry") toggleEvent(); });
+  toggleEvent();
+
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!f.checkValidity()) { f.reportValidity(); return; }
+    var fd = new FormData(f);
+    if (fd.get("_honey")) return;
+    var payload = {
+      _subject: "📩 Website inquiry — " + fd.get("inquiry") + " — " + fd.get("name"),
+      _template: "box", _captcha: "false", _replyto: fd.get("email"),
+      "Inquiry type": fd.get("inquiry"), Name: fd.get("name"), Phone: fd.get("phone"), Email: fd.get("email"),
+      Message: fd.get("message"), Language: window.LANG.toUpperCase()
+    };
+    if (!f.querySelector(".event-only").hidden) {
+      payload["Event date"] = fd.get("event_date") || "—";
+      payload["Guests"] = fd.get("guests") || "—";
+      payload["Event location"] = fd.get("event_location") || "—";
+    }
+    var btn = f.querySelector('button[type="submit"]');
+    btn.disabled = true; msg.className = "form-msg"; msg.textContent = window.t("c.sending");
+    fetch(C.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(payload) })
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok || j.success === "false" || j.success === false) throw new Error(j.message); }); })
+      .then(function () { msg.className = "form-msg ok"; msg.textContent = window.t("c.ok"); f.reset(); toggleEvent(); })
+      .catch(function () { msg.className = "form-msg err"; msg.textContent = window.t("c.err"); })
+      .then(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>

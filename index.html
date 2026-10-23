@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mendoza's Food Truck · Authentic Mexican Street Food in Reno & Sun Valley, NV</title>
+  <meta name="description" content="Mendoza's Food Truck — real Mexican flavor since 2001. Quesabirrias, tacos, burritos, Hot Cheetos birria bombs and Reno's 2-story food truck. 5425 Sun Valley Blvd & 500 S Meadows Pkwy. Order online or on DoorDash.">
+  <meta name="theme-color" content="#140707">
+  <meta property="og:title" content="Mendoza's Food Truck · Since 2001">
+  <meta property="og:description" content="Quesabirrias, tacos & burritos — 2 locations in Reno & Sun Valley. Order online.">
+  <meta property="og:image" content="assets/img/double-decker.jpg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Restaurant","name":"Mendoza's Food Truck","servesCuisine":"Mexican","telephone":"+1-775-420-8344","email":"Mendozasfoodtruck01@gmail.com","foundingDate":"2001",
+   "address":{"@type":"PostalAddress","streetAddress":"5425 Sun Valley Blvd","addressLocality":"Sun Valley","addressRegion":"NV","postalCode":"89433","addressCountry":"US"},
+   "sameAs":["https://www.instagram.com/mendozasfoodtruck/","https://www.facebook.com/profile.php?id=61582075576493"]}
+  </script>
+</head>
+<body>
+
+<!-- ===== Top bar ===== -->
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span class="topbar__status"><span class="pulse"></span><span data-i18n="top.open">Open 7 days a week · 2 locations</span></span>
+    <a class="topbar__phone" href="tel:+17754208344">📞 (775) 420-8344</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Nav ===== -->
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a href="index.html" class="nav__brand" aria-label="Mendoza's Food Truck home">
+      <img src="assets/img/logo-256.png" alt="Mendoza's Food Truck logo" width="56" height="53">
+      <span class="nav__word">Mendoza's<small data-i18n="nav.since">Food Truck · Since 2001</small></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#specials" data-i18n="nav.specials">Specials</a>
+      <a href="#reels" data-i18n="nav.reels">Reels</a>
+      <a href="#double-decker" data-i18n="nav.dd">2-Story Truck</a>
+      <a href="#visit" data-i18n="nav.visit">Locations</a>
+      <a href="contact.html" data-i18n="nav.events">Events & Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="cart-btn" type="button" data-open-cart aria-label="Open cart">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM5.2 4l.4 2H21l-2.2 8.2a2 2 0 0 1-1.9 1.5H8.4a2 2 0 0 1-2-1.6L4.4 4H2V2h3.9l.4 2Z"/></svg>
+        <span data-i18n="nav.order">Order</span>
+        <b class="cart-count" data-cart-count>0</b>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ===== Hero: video playlist ===== -->
+<section class="hero" id="top">
+  <div class="hero__media" aria-hidden="true">
+    <video class="hero__vid is-on" muted playsinline preload="auto" poster="assets/video/hero-grill.jpg"></video>
+    <video class="hero__vid" muted playsinline preload="none"></video>
+  </div>
+  <div class="hero__shade"></div>
+  <div class="papel" aria-hidden="true"></div>
+
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="script reveal" data-i18n="hero.kicker">¡Bienvenidos!</p>
+      <h1 class="neon reveal" aria-label="Mendoza's Tacos">
+        <span>M</span><span>e</span><span>n</span><span>d</span><span>o</span><span>z</span><span>a</span><span>'</span><span>s</span>
+        <em><span>T</span><span>a</span><span>c</span><span>o</span><span>s</span></em>
+      </h1>
+      <p class="hero__lead reveal" data-i18n="hero.lead">Real Mexican flavor, fired on the grill since 2001. Crispy quesabirrias dipped in consomé, street tacos, loaded burritos — and Reno's one-and-only 2-story food truck.</p>
+      <div class="hero__cta reveal">
+        <a href="#menu" class="btn btn--gold" data-i18n="hero.order">Order Pickup</a>
+        <a href="#" class="btn btn--ghost" data-doordash target="_blank" rel="noopener"><span data-i18n="hero.dd">Delivery on DoorDash</span> ↗</a>
+      </div>
+      <ul class="hero__stats reveal">
+        <li><b>2001</b><span data-i18n="stat.since">serving since</span></li>
+        <li><b>1000s</b><span data-i18n="stat.qb">quesabirrias a week</span></li>
+        <li><b>2</b><span data-i18n="stat.loc">trucks · 3rd coming</span></li>
+        <li><b>7</b><span data-i18n="stat.days">days a week</span></li>
+      </ul>
+    </div>
+    <aside class="hero__badge reveal">
+      <img src="assets/img/logo.png" alt="" class="spin-in" width="300" height="284">
+    </aside>
+  </div>
+
+  <div class="hero__reel wrap">
+    <div class="hero__dots" id="heroDots"></div>
+    <button class="hero__pause" id="heroPause" type="button" aria-label="Pause video">❚❚</button>
+  </div>
+</section>
+
+<!-- ===== Ticker ===== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Quesabirrias</span><i>✦</i><span>Tacos al Pastor</span><i>✦</i><span>Birria Ramen</span><i>✦</i><span>Hot Cheetos Bombs</span><i>✦</i><span>Super Burritos</span><i>✦</i><span>Papa Loca</span><i>✦</i><span>Aguas Frescas</span><i>✦</i><span>PizzaBirria</span><i>✦</i>
+    <span>Quesabirrias</span><i>✦</i><span>Tacos al Pastor</span><i>✦</i><span>Birria Ramen</span><i>✦</i><span>Hot Cheetos Bombs</span><i>✦</i><span>Super Burritos</span><i>✦</i><span>Papa Loca</span><i>✦</i><span>Aguas Frescas</span><i>✦</i><span>PizzaBirria</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ===== Quesabirria spotlight ===== -->
+<section class="spot">
+  <div class="wrap spot__in">
+    <div class="spot__img reveal">
+      <img src="assets/img/menu/quesabirria.jpg" alt="Quesabirria trio with consomé" loading="lazy">
+      <span class="stamp" data-i18n="spot.stamp">Quesabirria King</span>
+    </div>
+    <div class="spot__copy reveal">
+      <p class="script" data-i18n="spot.kicker">Word around town…</p>
+      <h2 data-i18n="spot.title">The best quesabirrias in Reno. Hands down.</h2>
+      <p data-i18n="spot.body">We make thousands of quesabirrias every week for a reason — crispy cheese, juicy slow-cooked birria, dipped in that rich consomé. Don't take our word for it… come taste it.</p>
+      <div class="spot__row">
+        <span class="price">$14.99</span>
+        <button class="btn btn--red" type="button" data-add="quesabirria-trio" data-i18n="spot.add">Add the Trio</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="menu paper" id="menu">
+  <div class="papel papel--top" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="menu__head">
+      <img src="assets/img/logo-256.png" alt="" width="120" height="114" loading="lazy">
+      <div>
+        <p class="script" data-i18n="menu.kicker">Authentic Mexican Street Food</p>
+        <h2 class="menu__title">Menú</h2>
+        <p class="menu__sub" data-i18n="menu.sub">Tap any dish to add it to your order. Choose your meat — Asada · Al Pastor · Birria · Chorizo · Chicken · Carnitas · Lengua · Tripa · Cabeza.</p>
+      </div>
+    </header>
+    <nav class="menu__tabs" id="menuTabs" aria-label="Menu categories"></nav>
+    <div id="menuBody"></div>
+    <p class="menu__fine" data-i18n="menu.fine">Prices may vary slightly by location. Ask about our salsas — red, green & spicy. ¡Buen provecho!</p>
+  </div>
+</section>
+
+<!-- ===== Specials ===== -->
+<section class="specials" id="specials">
+  <div class="lights" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="script" data-i18n="sp.kicker">Fresh off the grill</p>
+      <h2 data-i18n="sp.title">Specials & New Drops</h2>
+    </header>
+    <div class="specials__grid">
+      <article class="sp-card sp-card--papa reveal">
+        <video src="assets/video/reel-papa-loca.mp4" poster="assets/video/reel-papa-loca.jpg" muted loop playsinline preload="none" data-autoplay></video>
+        <div class="sp-card__body">
+          <span class="tag tag--new" data-i18n="tag.new">New</span>
+          <h3>Papa Loca 🥔🔥</h3>
+          <p data-i18n="sp.papa">Hot, fresh, cheesy & creamy — a loaded baked potato piled with your favorite meat. Available at BOTH locations. This might be the best Papa Loca you've ever had.</p>
+          <a href="tel:+17754208344" class="link" data-i18n="sp.ask">Ask for it at the window →</a>
+        </div>
+      </article>
+      <article class="sp-card reveal">
+        <div class="sp-card__img"><img src="assets/img/menu/mulita.jpg" alt="Mulitas" loading="lazy"><span class="heart">♥</span></div>
+        <div class="sp-card__body">
+          <span class="tag" data-i18n="sp.wknd">Fri · Sat · Sun only</span>
+          <h3 data-i18n="sp.mulTitle">Heart-Shaped Mulitas</h3>
+          <p data-i18n="sp.mul">Our famous crispy, cheesy, crunchy heart-shaped mulitas — fresh melted cheese and your favorite meats, grilled to perfection and made with love.</p>
+          <button class="link" type="button" data-add="mulita" data-i18n="sp.addMul">Add a Mulita →</button>
+        </div>
+      </article>
+      <article class="sp-card reveal">
+        <div class="sp-card__img"><img src="assets/video/hero-grill.jpg" alt="Steak and chicken on the grill" loading="lazy"></div>
+        <div class="sp-card__body">
+          <span class="tag tag--fire" data-i18n="sp.flavorTag">New flavor</span>
+          <h3 data-i18n="sp.fireTitle">Bringing the fire to the grill</h3>
+          <p data-i18n="sp.fire">We're now flame-grilling our steak, chicken & al pastor for that bold, smoky flavor everyone's talking about. One bite and you'll know.</p>
+          <a href="#menu" class="link" data-i18n="sp.see">See the tacos →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Reels ===== -->
+<section class="reels" id="reels">
+  <div class="wrap">
+    <header class="sec-head sec-head--row">
+      <div>
+        <p class="script" data-i18n="reels.kicker">As seen on the 'gram</p>
+        <h2 data-i18n="reels.title">Straight gas. Watch the hype.</h2>
+      </div>
+      <a href="#" data-ig class="btn btn--ghost" target="_blank" rel="noopener">@mendozasfoodtruck ↗</a>
+    </header>
+    <div class="reels__row">
+      <figure class="reel reveal"><video src="assets/video/reel-double-decker.mp4" poster="assets/video/reel-double-decker.jpg" muted loop playsinline preload="none" data-autoplay></video><button class="reel__snd" type="button" aria-label="Unmute">🔇</button><figcaption data-i18n="reels.c1">Reno has a 2-story food truck?!</figcaption></figure>
+      <figure class="reel reveal"><video src="assets/video/reel-off-the-chain.mp4" poster="assets/video/reel-off-the-chain.jpg" muted loop playsinline preload="none" data-autoplay></video><button class="reel__snd" type="button" aria-label="Unmute">🔇</button><figcaption data-i18n="reels.c2">Off the chain — Reno locals</figcaption></figure>
+      <figure class="reel reveal"><video src="assets/video/hero-birria.mp4" poster="assets/video/hero-birria.jpg" muted loop playsinline preload="none" data-autoplay></video><figcaption data-i18n="reels.c3">The ONE and ONLY · Sun Valley</figcaption></figure>
+      <figure class="reel reveal"><video src="assets/video/reel-almost-ready.mp4" poster="assets/video/reel-almost-ready.jpg" muted loop playsinline preload="none" data-autoplay></video><button class="reel__snd" type="button" aria-label="Unmute">🔇</button><figcaption data-i18n="reels.c4">Stay tuned…</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Double Decker ===== -->
+<section class="dd" id="double-decker">
+  <div class="wrap dd__in">
+    <div class="dd__copy reveal">
+      <p class="script" data-i18n="dd.kicker">Something you've never seen before</p>
+      <h2 data-i18n="dd.title">Reno's 2-Story Food Truck</h2>
+      <p data-i18n="dd.body">An ENORMOUS double-deck food truck with rooftop seating. Street food just turned into a rooftop restaurant — eat your tacos on the ROOF.</p>
+      <ul class="dd__list">
+        <li data-i18n="dd.l1">🔥 Ribeye tacos</li>
+        <li data-i18n="dd.l2">🔥 Tacos al trompo</li>
+        <li data-i18n="dd.l3">🔥 Handmade tortillas</li>
+        <li data-i18n="dd.l4">🍹 Margaritas, palomas & ice-cold beer</li>
+      </ul>
+      <a href="contact.html?type=double-decker" class="btn btn--gold" data-i18n="dd.book">Book the Double-Decker</a>
+    </div>
+    <div class="dd__gallery reveal">
+      <img src="assets/img/double-decker.jpg" alt="Mendoza's 2-story food truck at night" loading="lazy" class="g1">
+      <img src="assets/img/double-decker-stairs.jpg" alt="Double-decker stairs to the rooftop seating" loading="lazy" class="g2">
+      <img src="assets/img/double-decker-door.jpg" alt="Double-decker kitchen door and wrap" loading="lazy" class="g3">
+    </div>
+  </div>
+</section>
+
+<!-- ===== Visit ===== -->
+<section class="visit paper" id="visit">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="script" data-i18n="visit.kicker">Pull up</p>
+      <h2 data-i18n="visit.title">Two trucks. One crazy-good flavor.</h2>
+      <p class="sec-sub" data-i18n="visit.sub">Third location coming soon…</p>
+    </header>
+    <div class="visit__grid" id="locations"></div>
+
+    <div class="vibes">
+      <figure class="reveal"><img src="assets/img/truck-night.jpg" alt="Mendoza's Tacos trailer lit up at night" loading="lazy"><figcaption data-i18n="vibes.1">Under the lights</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/patio.jpg" alt="Covered patio with string lights" loading="lazy"><figcaption data-i18n="vibes.2">Our patio — now open</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/dining-room.jpg" alt="Indoor dining room" loading="lazy"><figcaption data-i18n="vibes.3">Indoor dining area</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/original-truck.jpg" alt="The original Mendoza's food truck" loading="lazy"><figcaption data-i18n="vibes.4">The OG truck · since 2001</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Events CTA ===== -->
+<section class="events">
+  <div class="lights" aria-hidden="true"></div>
+  <div class="wrap events__in reveal">
+    <p class="script" data-i18n="ev.kicker">Parties · Weddings · Company events</p>
+    <h2 data-i18n="ev.title">Book Mendoza's for your next event</h2>
+    <p data-i18n="ev.body">Taco bars, birria for a crowd, quinceañeras, corporate lunches — we bring the truck, the grill and the vibes. Catering for parties, celebrations, company events and more.</p>
+    <div class="hero__cta">
+      <a href="contact.html" class="btn btn--gold" data-i18n="ev.cta">Request a Quote</a>
+      <a href="tel:+17754208344" class="btn btn--ghost" data-i18n="ev.call">Call (775) 420-8344</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="foot">
+  <div class="papel papel--foot" aria-hidden="true"></div>
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <img src="assets/img/logo-256.png" alt="Mendoza's Food Truck" width="110" height="104" loading="lazy">
+      <p data-i18n="foot.tag">At Mendoza's we don't just serve food — we serve our community. Authentic Mexican flavors, cooked with care and pride.</p>
+    </div>
+    <div>
+      <h4 data-i18n="foot.visit">Visit</h4>
+      <p>5425 Sun Valley Blvd<br>Sun Valley, NV 89433</p>
+      <p>500 S Meadows Pkwy<br>Reno, NV 89521</p>
+    </div>
+    <div>
+      <h4 data-i18n="foot.contact">Contact</h4>
+      <p><a href="tel:+17754208344">(775) 420-8344</a><br><a href="mailto:Mendozasfoodtruck01@gmail.com">Mendozasfoodtruck01@gmail.com</a></p>
+      <p class="socials"><a href="#" data-ig target="_blank" rel="noopener">Instagram</a> · <a href="#" data-fb target="_blank" rel="noopener">Facebook</a> · <a href="#" data-doordash target="_blank" rel="noopener">DoorDash</a></p>
+    </div>
+  </div>
+  <p class="foot__base">© <span data-year></span> Mendoza's Food Truck · <span data-i18n="foot.made">Hecho con amor en Reno</span></p>
+</footer>
+
+<!-- Mobile order bar -->
+<button class="mbar" type="button" data-open-cart><span data-i18n="mbar.view">View order</span> · <b data-cart-total>$0.00</b> <i data-cart-count>0</i></button>
+
+<!-- ===== Item options modal ===== -->
+<div class="modal" id="optModal" hidden>
+  <div class="modal__back" data-close-modal></div>
+  <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="optTitle">
+    <button class="x" type="button" data-close-modal aria-label="Close">×</button>
+    <div class="modal__img" id="optImg"></div>
+    <div class="modal__body">
+      <h3 id="optTitle"></h3>
+      <p id="optDesc"></p>
+      <div id="optFields"></div>
+      <label class="fld"><span data-i18n="opt.notes">Special instructions</span>
+        <input type="text" id="optNotes" maxlength="120" data-i18n-ph="opt.notesPh" placeholder="No onions, extra salsa…">
+      </label>
+      <div class="modal__foot">
+        <div class="qty"><button type="button" data-q="-1" aria-label="Less">−</button><output id="optQty">1</output><button type="button" data-q="1" aria-label="More">+</button></div>
+        <button class="btn btn--red" type="button" id="optAdd"><span data-i18n="opt.add">Add to order</span> · <span id="optPrice"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Cart drawer ===== -->
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__back" data-close-cart></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <header class="drawer__head">
+      <h3 id="cartTitle" data-i18n="cart.title">Your Order</h3>
+      <button class="x" type="button" data-close-cart aria-label="Close">×</button>
+    </header>
+    <div class="drawer__scroll">
+      <div id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty">
+        <img src="assets/img/logo-256.png" alt="" width="110" height="104">
+        <p data-i18n="cart.empty">Your order is empty. Go grab some quesabirrias!</p>
+        <a href="#menu" class="btn btn--red" data-close-cart data-i18n="cart.browse">Browse the menu</a>
+      </div>
+      <div class="checkout" id="checkout">
+        <label class="fld"><span data-i18n="co.loc">Pickup location</span><select id="coLoc"></select></label>
+        <div class="totals">
+          <div><span data-i18n="co.sub">Subtotal</span><b data-cart-total>$0.00</b></div>
+          <small data-i18n="co.tax">Tax calculated at pickup / checkout.</small>
+        </div>
+
+        <div class="co-opts">
+          <button class="co co--pay" type="button" id="coPay" hidden><b data-i18n="co.pay">Pay online & pick up</b><small data-i18n="co.payS">Secure card checkout</small></button>
+          <a class="co co--dd" href="#" data-doordash target="_blank" rel="noopener"><b data-i18n="co.dd">Get it delivered on DoorDash ↗</b><small data-i18n="co.ddS">Opens our DoorDash store — add the same items there</small></a>
+          <button class="co co--pick" type="button" id="coPickToggle"><b data-i18n="co.pick">Send pickup order · pay at the truck</b><small data-i18n="co.pickS">We'll confirm by text or call</small></button>
+          <form id="pickForm" class="pick-form" hidden>
+            <label class="fld"><span data-i18n="f.name">Name</span><input name="name" required autocomplete="name"></label>
+            <label class="fld"><span data-i18n="f.phone">Phone</span><input name="phone" type="tel" required autocomplete="tel"></label>
+            <label class="fld"><span data-i18n="co.time">Pickup time</span><input name="pickup_time" data-i18n-ph="co.timePh" placeholder="ASAP or 7:30 PM"></label>
+            <button class="btn btn--red btn--block" type="submit" data-i18n="co.send">Send my order</button>
+            <p class="form-msg" id="pickMsg" role="status"></p>
+          </form>
+          <a class="co co--call" href="tel:+17754208344"><b data-i18n="co.call">Call in your order</b><small>(775) 420-8344</small></a>
+        </div>
+        <button class="clear" type="button" id="cartClear" data-i18n="cart.clear">Clear order</button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/config.js"></script>
+<script src="js/menu-data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
